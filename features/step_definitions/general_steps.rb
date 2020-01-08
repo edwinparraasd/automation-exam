@@ -1,3 +1,5 @@
-Given("User is in Ebay home page") do
-  pending # Write code here that turns the phrase above into concrete actions
+# frozen_string_literal: true
+
+Given('User is in Ebay home page') do
+  visit 'https://www.ebay.com/'
 end
