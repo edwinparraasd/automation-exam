@@ -1,6 +1,6 @@
 # Automation Exam
 
-This is a project to test a shoes search in [ebay] (http://www.ebay.com/)
+This is a project to test a shoes search in [ebay](http://www.ebay.com/)
 
 ## Getting Started
 
@@ -10,13 +10,13 @@ These instructions will get you run the tests.
 
 To run the test, is necessary that you install:
 
- - Homebrew 2.2.2, but you can use another suite manager(e.g. pip)
- - ruby 2.6.5
- - Chrome 79.0.39 [Chrome] (https://www.google.com/intl/es/chrome/)
- - ChromeDriver 79.0.3945.36 -> 
+ - `Homebrew` 2.2.2, but you can use another suite manager(e.g. pip)
+ - `ruby` 2.6.5
+ - `Chrome` 79.0.39 [Chrome](https://www.google.com/intl/es/chrome/)
+ - `ChromeDriver` 79.0.3945.36 -> 
   ``` brew install chromedriver ```
- - Firefox 79.0.39 (Optional) [Firefox] (https://www.mozilla.org/es-ES/firefox/new/)
- - geckodriver 0.26.0 (Optional) ->
+ - `Firefox` 79.0.39 (Optional) [Firefox](https://www.mozilla.org/es-ES/firefox/new/)
+ - `geckodriver` 0.26.0 (Optional) ->
    ``` brew install chromedriver ```
 
 ### Installing
@@ -62,12 +62,7 @@ Feature: Search articules
 * [Capybara](http://teamcapybara.github.io/capybara/) - Capybara is a library written in the Ruby programming language which makes it easy to simulate how a user interacts with your application.
 * [Siteprism](https://github.com/site-prism/site_prism) - A Page Object Model DSL for Capybara
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-
-## Authors
+## Author
 
 * **David Peña** - *Initial work* - [darepecu](https://github.com/darepecu)
 
