@@ -8,6 +8,8 @@ module Pages
       element :search_brand_field, '.x-searchable-list__textbox__aspect-Brand'
       element :brand_container, '#x-refine__group_1__1'
       element :size_container, '#x-refine__group_1__0'
+      element :results_label, :xpath, '//*[@id="mainContent"]/div[1]/div/div[2]/div/div[1]'
+      element :sort_button, '#w9'
 
       def refining_search_by(searchable, keyword)
         case searchable
@@ -15,6 +17,16 @@ module Pages
           refining_search_by_brand(keyword)
         when 'US Shoe Size'
           refining_search_by_size(keyword)
+        end
+      end
+
+      def sort_elements(type)
+        wait_until_sort_button_visible
+        sort_button.hover
+        if type.eql? ('price ascendant')
+          find(:xpath, "//*[@id='w9']/div/div/ul/li[4]/a").click
+        else
+          find(:xpath, "//*[@id='w9']/div/div/ul/li[5]/a").click
         end
       end
 

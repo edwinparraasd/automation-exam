@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
 Then('Print the number of results') do
-  pending # Write code here that turns the phrase above into concrete actions
+  total_results = @river_results.results_label.text
+  puts total_results
+  expect(total_results).to match(/^(.*)\sresults|resultados\sfor|para\s(\w*)$/)
 end
 
 Then('Order by price ascendant') do
-  pending # Write code here that turns the phrase above into concrete actions
+  @river_results.sort_elements('price ascendant')
 end
 
 Then('Assert the order taking the first {int} results') do |_int|
