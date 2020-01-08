@@ -1,4 +1,4 @@
-Feature: Search artitules
+Feature: Search articles
 
   Scenario: Automation Exam
     Given User is in Ebay home page
