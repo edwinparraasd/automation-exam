@@ -10,6 +10,7 @@ module Pages
       element :size_container, '#x-refine__group_1__0'
       element :results_label, :xpath, '//*[@id="mainContent"]/div[1]/div/div[2]/div/div[1]'
       element :sort_button, '#w9'
+      element :river_result_container, '#srp-river-results'
 
       def refining_search_by(searchable, keyword)
         case searchable
@@ -23,7 +24,7 @@ module Pages
       def sort_elements(type)
         wait_until_sort_button_visible
         sort_button.hover
-        if type.eql? ('price ascendant')
+        if type.eql? 'price ascendant'
           find(:xpath, "//*[@id='w9']/div/div/ul/li[4]/a").click
         else
           find(:xpath, "//*[@id='w9']/div/div/ul/li[5]/a").click
