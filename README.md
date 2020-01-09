@@ -27,6 +27,14 @@ To install all gems, run this command:
 bundle install
 ```
 
+Copy .env.example to .env
+
+```
+cp .env.example .env
+```
+
+*Important:* You must change PASS_SENDGRID. If you want you can contact me for that. 
+
 ## Running the tests
 
 To run the automated tests, you run this command:
