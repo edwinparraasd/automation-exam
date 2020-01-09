@@ -15,3 +15,7 @@ Before do
   Capybara.default_driver = :chrome
   Capybara.default_max_wait_time = 10
 end
+
+After do |scenario|
+  Mail.send_email(scenario.status.to_s)
+end
