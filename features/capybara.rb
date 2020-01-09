@@ -2,13 +2,20 @@
 
 Before do
   Capybara.register_driver :chrome do |app|
-    caps = Selenium::WebDriver::Remote::Capabilities.chrome
+    caps = if ENV['HEADLESS'].eql?('false')
+             Selenium::WebDriver::Remote::Capabilities.chrome
+           else
+             Selenium::WebDriver::Remote::Capabilities.chrome(
+               chromeOptions: {
+                 args: %w(headless disable-gpu no-sandbox)
+               }
+             )
+           end
+
     Capybara::Selenium::Driver.new(
       app,
       browser: :chrome,
-      desired_capabilities: caps,
-      clear_local_storage: true,
-      clear_session_storage: true
+      desired_capabilities: caps
     )
   end
 
