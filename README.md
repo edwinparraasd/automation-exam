@@ -4,7 +4,7 @@ This is a project to test a shoes search in [ebay](http://www.ebay.com/)
 
 ## Getting Started
 
-These instructions will get you run the tests. 
+These instructions will get you run the tests.
 
 ### Prerequisites
 
@@ -13,7 +13,7 @@ To run the test, is necessary that you install:
  - `Homebrew` 2.2.2, but you can use another suite manager(e.g. pip)
  - `ruby` 2.6.5
  - `Chrome` 79.0.39 [Chrome](https://www.google.com/intl/es/chrome/)
- - `ChromeDriver` 79.0.3945.36 -> 
+ - `ChromeDriver` 79.0.3945.36 ->
   ``` brew install chromedriver ```
  - `Firefox` 79.0.39 (Optional) [Firefox](https://www.mozilla.org/es-ES/firefox/new/)
  - `geckodriver` 0.26.0 (Optional) ->
@@ -35,11 +35,17 @@ To run the automated tests, you run this command:
 cucumber
 ```
 
+If you want you can generate a report with this command:
+
+```
+cucumber -f html -o results.htm
+```
+
 ### And coding style tests
 
-All the test are in  `*.features`  file. 
+All the test are in  `*.features`  file.
 
-And used Cucumber structure: 
+And used Cucumber structure:
 
 ```
 Feature: Search articules
